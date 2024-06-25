@@ -16,12 +16,6 @@ const Header = () => {
                     >
                         Home
                     </Link>
-                    <Link
-                        to="/jstutorial"
-                        className="px-2 py-1 transition bg-white rounded-sm shadow-sm hover:bg-gray-100"
-                    >
-                        Tutorial Javascript
-                    </Link>
                 </nav>
             </div>
             <Sidemenu />
