@@ -1,198 +1,138 @@
+import Codigo from "../components/Codigo";
+import Nota from "../components/Nota";
+import InfoBox from "../components/InfoBox";
+import InlineCode from "../components/InlineCode";
+import TextoComponent from "../components/TextComponent";
+
 function JSVariables() {
     return (
-        <div className="w-full mt-20 ml-48 overflow-auto bg-white ">
+        <div className="w-full mt-20 ml-48 overflow-auto bg-white">
             <h2 className="p-5 text-3xl font-semibold text-slate-800">
                 Variáveis Javascript
             </h2>
-            <div className="p-5 bg-green-500 bg-opacity-20">
-                <h3 className="text-xl font-semibold">
-                    Variáveis são Containers para Armazenar Dados
-                </h3>
+            <InfoBox titulo="Variáveis são Containers para Armazenar Dados">
                 <p>Variáveis JavaScript podem ser declaradas de 4 maneiras:</p>
                 <ul className="list-disc ml-7">
                     <li>Automaticamente</li>
                     <li>
-                        Usando
-                        <code className="px-1 text-red-600 bg-orange-100">
-                            var
-                        </code>
+                        Usando <InlineCode content="var" />
                     </li>
                     <li>
-                        Usando
-                        <code className="px-1 text-red-600 bg-orange-100">
-                            let
-                        </code>
+                        Usando <InlineCode content="let" />
                     </li>
                     <li>
-                        Usando
-                        <code className="px-1 text-red-600 bg-orange-100">
-                            const
-                        </code>
+                        Usando <InlineCode content="const" />
                     </li>
                 </ul>
-            </div>
+            </InfoBox>
             <div className="flex flex-col gap-5 px-5 pt-5">
                 <p>
-                    Neste primeiro exemplo,
-                    <code className="px-1 text-red-600 bg-orange-100">x</code>,
-                    <code className="px-1 text-red-600 bg-orange-100">y</code>,
-                    e<code className="px-1 text-red-600 bg-orange-100">z</code>{" "}
-                    são variáveis não declaradas.
+                    Neste primeiro exemplo, <InlineCode content="x" />,{" "}
+                    <InlineCode content="y" />, e <InlineCode content="z" /> são
+                    variáveis não declaradas.
                 </p>
                 <p>
                     Elas são declaradas automaticamente ao serem usadas pela
                     primeira vez:
                 </p>
             </div>
-            <div className="p-3 m-3 my-5 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>x = 5;</code>
-                    <br />
-                    <code>y = 6;</code>
-                    <br />
-                    <code>z = x + y;</code>
-                </div>
-            </div>
-            <div className="p-5 bg-amber-100">
-                <h2 className="text-3xl font-semibold text-slate-800">Nota</h2>
-                <p>
-                    É considerado uma boa prática de programação de sempre
-                    declarar suas variáveis antes de usá-las.
-                </p>
-            </div>
-            <div className="px-5 py-5 ">
+            <Codigo titulo="Exemplo">
+                <code>x = 5;</code>
+                <br />
+                <code>y = 6;</code>
+                <br />
+                <code>z = x + y;</code>
+            </Codigo>
+            <Nota titulo="Nota">
+                É considerado uma boa prática de programação de sempre declarar
+                suas variáveis antes de usá-las.
+            </Nota>
+            <div className="px-5 py-5">
                 <p>Pelos exemplos você pode imaginar que:</p>
                 <ul className="pl-8 list-disc">
                     <li>
-                        <code className="px-1 mr-1 text-red-600 bg-orange-100">
-                            x
-                        </code>
+                        <InlineCode content="x" />
                         armazena o valor de 5
                     </li>
                     <li>
-                        <code className="px-1 mr-1 text-red-600 bg-orange-100">
-                            y
-                        </code>
+                        <InlineCode content="y" />
                         armazena o valor de 6
                     </li>
                     <li>
-                        <code className="px-1 mr-1 text-red-600 bg-orange-100">
-                            z
-                        </code>
+                        <InlineCode content="z" />
                         armazena o valor de 11
                     </li>
                 </ul>
             </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo usando var</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>var x = 5;</code>
-                    <br />
-                    <code>var y = 6;</code>
-                    <br />
-                    <code>var z = x + y;</code>
-                </div>
-            </div>
-            <div className="p-5 bg-amber-100">
-                <h2 className="text-3xl font-semibold text-slate-800">Nota</h2>
+            <Codigo titulo="Exemplo usando var">
+                <code>var x = 5;</code>
+                <br />
+                <code>var y = 6;</code>
+                <br />
+                <code>var z = x + y;</code>
+            </Codigo>
+            <Nota titulo="Nota">
                 <p>
                     A palavra-chave
-                    <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                        var
-                    </code>
+                    <InlineCode content="var" />
                     foi usada em todo o JavaScript de 1995 até 2015.
                 </p>
                 <p>
                     As palavras-chave
-                    <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                        let
-                    </code>
+                    <InlineCode content="let" />
                     e
-                    <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                        const
-                    </code>
+                    <InlineCode content="const" />
                     foram adicionadas ao JavaScript em 2015.
                 </p>
                 <p>
                     A palavra-chave
-                    <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                        var
-                    </code>
+                    <InlineCode content="var" />
                     deve ser usada apenas em códigos escritos para navegadores
                     antigos.
                 </p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo usando let</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>let x = 5;</code>
-                    <br />
-                    <code>let y = 6;</code>
-                    <br />
-                    <code>let z = x + y;</code>
-                </div>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo usando const</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>const x = 5;</code>
-                    <br />
-                    <code>const y = 6;</code>
-                    <br />
-                    <code>const z = x + y;</code>
-                </div>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo misto</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>const preco1 = 5;</code>
-                    <br />
-                    <code>const preco2 = 6;</code>
-                    <br />
-                    <code>let total = preco1 + preco2;</code>
-                </div>
-            </div>
-            <div className="flex flex-col gap-5 p-5">
+            </Nota>
+            <Codigo titulo="Exemplo usando let">
+                <code>let x = 5;</code>
+                <br />
+                <code>let y = 6;</code>
+                <br />
+                <code>let z = x + y;</code>
+            </Codigo>
+            <Codigo titulo="Exemplo usando const">
+                <code>const x = 5;</code>
+                <br />
+                <code>const y = 6;</code>
+                <br />
+                <code>const z = x + y;</code>
+            </Codigo>
+            <Codigo titulo="Exemplo misto">
+                <code>const preco1 = 5;</code>
+                <br />
+                <code>const preco2 = 6;</code>
+                <br />
+                <code>let total = preco1 + preco2;</code>
+            </Codigo>
+            <TextoComponent>
                 <p>
                     As duas variáveis
-                    <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                        preco1
-                    </code>
+                    <InlineCode content="price1" />
                     e
-                    <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                        preco2
-                    </code>{" "}
+                    <InlineCode content="price2" />
                     são declaradas com a palavra-chave
-                    <code className="px-1 ml-1 text-red-600 bg-orange-100">
-                        const
-                    </code>
-                    .
+                    <InlineCode content="const" />.
                 </p>
                 <p>Estes valores são constantes e não podem ser alterados.</p>
                 <p>
-                    A variável{" "}
-                    <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                        total
-                    </code>{" "}
+                    A variável <InlineCode content="total" />
                     foi declarada com a palavra-chave{" "}
-                    <code className="px-1 ml-1 text-red-600 bg-orange-100">
-                        let
-                    </code>
-                    .
+                    <InlineCode content="let" />.
                 </p>
                 <p>
-                    A variável{" "}
-                    <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                        total
-                    </code>{" "}
+                    A variável <InlineCode content="total" />
                     pode ter seu valor alterado.
                 </p>
-            </div>
-            <div className="p-5 bg-amber-100">
-                <h2 className="text-3xl font-semibold text-slate-800">
-                    Quando devo usar var, let ou const?
-                </h2>
+            </TextoComponent>
+            <Nota titulo="Quando devo usar var, let ou const?">
                 <ol className="flex flex-col gap-5 px-5 pt-5 list-decimal">
                     <li>
                         <p>Sempre declare as variáveis.</p>
@@ -200,18 +140,14 @@ function JSVariables() {
                     <li>
                         <p>
                             Sempre use
-                            <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                                const
-                            </code>
+                            <InlineCode content="const" />
                             se o valor da variável não deve ser alterado.
                         </p>
                     </li>
                     <li>
                         <p>
                             Sempre use
-                            <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                                const
-                            </code>
+                            <InlineCode content="const" />
                             se o tipo da variável não deve ser alterado. (Arrays
                             e objetos)
                         </p>
@@ -219,60 +155,43 @@ function JSVariables() {
                     <li>
                         <p>
                             Apenas use
-                            <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                                let
-                            </code>
-                            se você não pode usar{" "}
-                            <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                                const
-                            </code>
+                            <InlineCode content="let" />
+                            se você não pode usar <InlineCode content="const" />
                             .
                         </p>
                     </li>
                     <li>
                         <p>
                             Apenas use
-                            <code className="px-1 mx-1 text-red-600 bg-orange-100">
-                                var
-                            </code>
+                            <InlineCode content="var" />
                             se você <b>DEVE</b> suportar navegadores antigos.
                         </p>
                     </li>
                 </ol>
-            </div>
+            </Nota>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">
-                    Assim como na Álgebra
-                </h2>
+            <TextoComponent titulo="Assim como na Álgebra">
                 <p>Assim como na álgebra, as variáveis contêm valores:</p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>let x = 5;</code>
-                    <br />
-                    <code>let y = 6;</code>
-                </div>
-            </div>
-            <div className="flex flex-col gap-5 p-5">
+            </TextoComponent>
+            <Codigo>
+                <code>let x = 5;</code>
+                <br />
+                <code>let y = 6;</code>
+            </Codigo>
+            <TextoComponent>
                 <p>
                     Assim como na álgebra, variáveis são usadas em expressões:
                 </p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>let z = x + y;</code>
-                </div>
-            </div>
+            </TextoComponent>
+            <Codigo>
+                <code>let z = x + y;</code>
+            </Codigo>
             <p className="p-5">
                 A partir do exemplo acima, você pode adivinhar que o total é
                 calculado como 11.
             </p>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">
-                    Identificadores JavaScript
-                </h2>
+            <TextoComponent titulo="Identificadores JavaScript">
                 <p>
                     Todas as <b>variáveis</b> em JavaScript devem ser{" "}
                     <b>identificadas</b> por <b>nomes únicos</b>.
@@ -307,34 +226,27 @@ function JSVariables() {
                         podem ser usadas como nomes.
                     </li>
                 </ul>
-            </div>
-            <div className="p-5 bg-amber-100">
-                <h2 className="text-3xl font-semibold text-slate-800">Nota</h2>
+            </TextoComponent>
+            <Nota titulo="Nota">
                 <p>
                     Os identificadores JavaScript diferenciam maiúsculas de
                     minúsculas.
                 </p>
-            </div>
+            </Nota>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">
-                    O Operador de Atribuição
-                </h2>
+            <TextoComponent titulo="O Operador de Atribuição">
                 <p>
-                    Em JavaScript, o sinal de igual (
-                    <code className="px-1 text-red-600 bg-orange-100">=</code>)
+                    Em JavaScript, o sinal de igual (<InlineCode content="=" />)
                     é um operador de “atribuição”, não um operador “igual a”.
                 </p>
                 <p>
                     Isso é diferente da álgebra. O seguinte não faz sentido em
                     álgebra:
                 </p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>x = x + 5;</code>
-                </div>
-            </div>
+            </TextoComponent>
+            <Codigo>
+                <code>x = x + 5;</code>
+            </Codigo>
             <p className="p-5">
                 Em JavaScript, porém, faz todo o sentido: atribui o valor de x +
                 5 a x.
@@ -343,19 +255,14 @@ function JSVariables() {
                 (Ele calcula o valor de x + 5 e coloca o resultado em x. O valor
                 de x é incrementado em 5.)
             </p>
-            <div className="p-5 bg-amber-100">
-                <h2 className="text-3xl font-semibold text-slate-800">Nota</h2>
+            <Nota titulo="Nota">
                 <p>
                     O operador &quot;igual a&quot; é escrito com dessa maneira{" "}
-                    <code className="px-1 text-red-600 bg-orange-100">==</code>{" "}
-                    em JavaScript
+                    <InlineCode content="==" /> em JavaScript
                 </p>
-            </div>
+            </Nota>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">
-                    Tipos de dados JavaScript
-                </h2>
+            <TextoComponent titulo="Tipos de dados JavaScript">
                 <p>
                     Variáveis JavaScript podem conter números como 100 e valores
                     de texto como &quot;John Doe&quot;.
@@ -376,152 +283,115 @@ function JSVariables() {
                     Se você colocar um número entre aspas, ele será tratado como
                     uma sequência de texto.
                 </p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>const pi = 3.14;</code>
-                    <br />
-                    <code>const pessoa = &quot;John Doe&quot; ;</code>
-                    <br />
-                    <code>let resposta = &apos;Sim Eu sou!&apos;;</code>
-                </div>
-            </div>
+            </TextoComponent>
+            <Codigo titulo="Exemplo">
+                <code>const pi = 3.14;</code>
+                <br />
+                <code>const pessoa = &quot;John Doe&quot; ;</code>
+                <br />
+                <code>let resposta = &apos;Sim Eu sou!&apos;;</code>
+            </Codigo>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">
-                    Declarando uma Variável em JavaScript
-                </h2>
+            <TextoComponent titulo="Declarando uma Variável em JavaScript">
                 <p>
                     Criar uma variável em JavaScript é chamado de “declarar” uma
                     variável.
                 </p>
                 <p>
                     Você declara uma variável JavaScript com a palavra-chave{" "}
-                    <code className="px-1 text-red-600 bg-orange-100">var</code>
-                    ou{" "}
-                    <code className="px-1 text-red-600 bg-orange-100">let</code>
-                    :
+                    <InlineCode content="var" />
+                    ou <InlineCode content="let" />:
                 </p>
-            </div>
-            <div className="flex flex-col gap-2 p-3 m-3 rounded-md bg-slate-300">
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>var carName;</code>
-                    <br />
-                </div>
+            </TextoComponent>
+            <Codigo>
+                <code>var carName;</code>
+                <br />
                 <p>ou:</p>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>let carName;</code>
-                </div>
-            </div>
+                <code>let carName;</code>
+            </Codigo>
             <p className="p-5">
                 Após a declaração, a variável não tem valor (tecnicamente está{" "}
-                <code className="px-1 text-red-600 bg-orange-100">
-                    undefined
-                </code>
+                <InlineCode content="undefined" />
                 ).
             </p>
             <p className="p-5">
                 Para <b>atribuir</b> um valor à variável, use o sinal de igual:
             </p>
-            <div className="flex flex-col gap-2 p-3 m-3 rounded-md bg-slate-300">
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>carName = &quot;Volvo&quot;;</code>
-                </div>
-            </div>
+            <Codigo>
+                <code>carName = &quot;Volvo&quot;;</code>
+            </Codigo>
             <p className="p-5">
                 Você tambem pode atribuir um valor para a variavel quando você
                 declara ela:
             </p>
-            <div className="flex flex-col gap-2 p-3 m-3 rounded-md bg-slate-300">
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>let carName = &quot;Volvo&quot;;</code>
-                </div>
-            </div>
+            <Codigo>
+                <code>let carName = &quot;Volvo&quot;;</code>
+            </Codigo>
             <p className="p-5">
                 No exemplo abaixo, nós criamos uma variavel chamada{" "}
-                <code>carName</code> e atribuimos o valor &quot;Volvo&quot; à
-                ela.
+                <InlineCode content="carName" /> e atribuimos o valor
+                &quot;Volvo&quot; à ela.
             </p>
             <p className="p-5">
                 Em seguida, &quot;emitimos&quot; o valor dentro de um parágrafo
                 HTML com id=&quot;demo&quot;:
             </p>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
-                        <br />
-                        <br />
-                        &lt;script&gt;
-                        <br />
-                        let carName = &quot;Volvo&quot;;
-                        <br />
-                        document.getElementById(&quot;demo&quot;).innerHTML =
-                        carName;
-                        <br />
-                        &lt;/script&gt;
-                    </code>
-                </div>
-            </div>
-            <div className="p-5 bg-amber-100">
-                <h2 className="text-3xl font-semibold text-slate-800">Nota</h2>
+            <Codigo titulo="Exemplo">
+                <code>
+                    &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+                    <br />
+                    <br />
+                    &lt;script&gt;
+                    <br />
+                    let carName = &quot;Volvo&quot;;
+                    <br />
+                    document.getElementById(&quot;demo&quot;).innerHTML =
+                    carName;
+                    <br />
+                    &lt;/script&gt;
+                </code>
+            </Codigo>
+            <Nota titulo="Nota">
                 <p>
                     É uma boa prática declarar todas as variáveis no início de
                     um bloco de código.
                 </p>
-            </div>
+            </Nota>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">
-                    Uma afirmação, muitas variáveis
-                </h2>
+            <TextoComponent titulo="Uma afirmação, muitas variáveis">
                 <p>
                     Você pode declarar várias variáveis em uma única declaração.
                 </p>
                 <p>
                     Inicie a declaração com
-                    <code className="px-1 text-red-600 bg-orange-100">let</code>
-                    e separe as variáveis com uma
+                    <InlineCode content="let" />e separe as variáveis com uma
                     <b> vírgula</b>:
                 </p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">let</code> person ={" "}
-                        <code className="text-red-700">
-                            &quot;John Doe&quot;
-                        </code>
-                        , carName ={" "}
-                        <code className="text-red-700">&quot;Volvo&quot;</code>,
-                        price = 200;
-                    </code>
-                </div>
-            </div>
+            </TextoComponent>
+            <Codigo titulo="Exemplo">
+                <code>
+                    <code className="text-blue-500">let</code> person ={" "}
+                    <code className="text-red-700">&quot;John Doe&quot;</code>,
+                    carName ={" "}
+                    <code className="text-red-700">&quot;Volvo&quot;</code>,
+                    price = 200;
+                </code>
+            </Codigo>
             <p className="p-5">Uma declaração pode abranger várias linhas: </p>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">let</code> person ={" "}
-                        <code className="text-red-700">
-                            &quot;John Doe&quot;
-                        </code>
-                        ,
-                        <br />
-                        carName ={" "}
-                        <code className="text-red-700">&quot;Volvo&quot;</code>,
-                        <br />
-                        price = <code className="text-red-500">200</code>;
-                    </code>
-                </div>
-            </div>
+            <Codigo titulo="Exemplo">
+                <code>
+                    <code className="text-blue-500">let</code> person ={" "}
+                    <code className="text-red-700">&quot;John Doe&quot;</code>
+                    ,
+                    <br />
+                    carName ={" "}
+                    <code className="text-red-700">&quot;Volvo&quot;</code>,
+                    <br />
+                    price = <code className="text-red-500">200</code>;
+                </code>
+            </Codigo>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">Valor = Undefined</h2>
+            <TextoComponent titulo="Valor = Undefined">
                 <p>
                     Em programas de computador, as variáveis são frequentemente
                     declaradas sem valor. O valor pode ser algo que precisa ser
@@ -530,180 +400,128 @@ function JSVariables() {
                 </p>
                 <p>
                     Uma variável declarada sem valor terá o valor{" "}
-                    <code className="px-1 text-red-600 bg-orange-100">
-                        undefined
-                    </code>
-                    .
+                    <InlineCode content="undefined" />.
                 </p>
                 <p>
                     A variável carName terá o valor{" "}
-                    <code className="px-1 text-red-600 bg-orange-100">
-                        undefined
-                    </code>{" "}
-                    após a execução desta instrução:
+                    <InlineCode content="undefined" /> após a execução desta
+                    instrução:
                 </p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">let</code> carName;
-                    </code>
-                </div>
-            </div>
+            </TextoComponent>
+            <Codigo titulo="Exemplo">
+                <code>
+                    <code className="text-blue-500">let</code> carName;
+                </code>
+            </Codigo>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">
-                    Redeclarando Variáveis JavaScript
-                </h2>
+            <TextoComponent titulo="Redeclarando Variáveis JavaScript">
                 <p>
                     Se você declarar novamente uma variável JavaScript declarada
-                    com{" "}
-                    <code className="px-1 text-red-600 bg-orange-100">var</code>
-                    , ela não perderá seu valor.
+                    com <InlineCode content="var" />, ela não perderá seu valor.
                 </p>
                 <p>
-                    A variável{" "}
-                    <code className="px-1 text-red-600 bg-orange-100">
-                        carName
-                    </code>{" "}
-                    ainda terá o valor &quot;Volvo&quot; após a execução destas
-                    instruções:
+                    A variável <InlineCode content="carName" /> ainda terá o
+                    valor &quot;Volvo&quot; após a execução destas instruções:
                 </p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">var</code> carName ={" "}
-                        <code className="text-red-700">&quot;Volvo&quot;;</code>
-                        <br />
-                        <code className="text-blue-500">var</code> carName;
-                    </code>
-                </div>
-            </div>
-            <div className="p-5 bg-amber-100">
-                <h2 className="text-3xl font-semibold text-slate-800">Nota</h2>
+            </TextoComponent>
+            <Codigo titulo="Exemplo">
+                <code>
+                    <code className="text-blue-500">var</code> carName ={" "}
+                    <code className="text-red-700">&quot;Volvo&quot;;</code>
+                    <br />
+                    <code className="text-blue-500">var</code> carName;
+                </code>
+            </Codigo>
+            <Nota titulo="Nota">
                 <p>
                     Você não pode redeclarar variáveis JavaScript declaradas com{" "}
-                    <code className="px-1 text-red-600 bg-orange-100">
-                        let{" "}
-                    </code>
+                    <InlineCode content="let" />
                     ou
-                    <code className="px-1 text-red-600 bg-orange-100">
-                        {" "}
-                        const
-                    </code>
-                    .
+                    <InlineCode content="const" />.
                 </p>
                 <p>Isso não irá funcionar: </p>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">let</code> carName ={" "}
-                        <code className="text-red-700">&quot;Volvo&quot;;</code>
-                        <br />
-                        <code className="text-blue-500">let</code> carName;
-                    </code>
-                </div>
-            </div>
+                <code>
+                    <code className="text-blue-500">let</code> carName ={" "}
+                    <code className="text-red-700">&quot;Volvo&quot;;</code>
+                    <br />
+                    <code className="text-blue-500">let</code> carName;
+                </code>
+            </Nota>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">
-                    Aritmética JavaScript
-                </h2>
+            <TextoComponent titulo="Aritmética JavaScript">
                 <p>
                     Assim como acontece com a álgebra, você pode fazer
                     aritmética com variáveis JavaScript, usando operadores como
-                    <code className="px-1 text-red-600 bg-orange-100">=</code>e
-                    <code className="px-1 text-red-600 bg-orange-100">+</code>:
+                    <InlineCode content="=" />e<InlineCode content="+" />:
                 </p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">let</code> x ={" "}
-                        <code className="text-red-500">5 </code>+
-                        <code className="text-red-500"> 2 </code>+
-                        <code className="text-red-500"> 3</code>;
-                    </code>
-                </div>
-            </div>
+            </TextoComponent>
+            <Codigo titulo="Exemplo">
+                <code>
+                    <code className="text-blue-500">let</code> x ={" "}
+                    <code className="text-red-500">5 </code>+
+                    <code className="text-red-500"> 2 </code>+
+                    <code className="text-red-500"> 3</code>;
+                </code>
+            </Codigo>
             <p className="p-5">
                 Você também pode adicionar &quot;strings&quot;, mas strings
                 serão concatenadas:
             </p>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">let</code> x ={" "}
-                        <code className="text-red-700">&quot;John&quot; </code>+
-                        <code className="text-red-700"> &quot; &quot; </code>+
-                        <code className="text-red-700"> &quot;Doe&quot;</code>;
-                    </code>
-                </div>
-            </div>
+            <Codigo titulo="Exemplo">
+                <code>
+                    <code className="text-blue-500">let</code> x ={" "}
+                    <code className="text-red-700">&quot;John&quot; </code>+
+                    <code className="text-red-700"> &quot; &quot; </code>+
+                    <code className="text-red-700"> &quot;Doe&quot;</code>;
+                </code>
+            </Codigo>
             <p className="p-5">Tente também isto:</p>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">let</code> x ={" "}
-                        <code className="text-red-700">&quot;5&quot; </code>+
-                        <code className="text-red-500"> 2 </code>+
-                        <code className="text-red-500"> 3</code>;
-                    </code>
-                </div>
-            </div>
-            <div className="p-5 bg-amber-100">
-                <h2 className="text-3xl font-semibold text-slate-800">Nota</h2>
+            <Codigo titulo="Exemplo">
+                <code>
+                    <code className="text-blue-500">let</code> x ={" "}
+                    <code className="text-red-700">&quot;5&quot; </code>+
+                    <code className="text-red-500"> 2 </code>+
+                    <code className="text-red-500"> 3</code>;
+                </code>
+            </Codigo>
+            <Nota titulo="Nota">
                 <p>
                     Se você colocar um número entre aspas, o resto dos números
                     serão tratados como strings e concatenados.
                 </p>
-            </div>
+            </Nota>
             <p className="p-5">Agora tente isso:</p>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">let</code> x ={" "}
-                        <code className="text-red-500"> 2 </code>+
-                        <code className="text-red-500"> 3 </code>+
-                        <code className="text-red-700"> &quot;5&quot;</code>;
-                    </code>
-                </div>
-            </div>
+            <Codigo titulo="Exemplo">
+                <code>
+                    <code className="text-blue-500">let</code> x ={" "}
+                    <code className="text-red-500"> 2 </code>+
+                    <code className="text-red-500"> 3 </code>+
+                    <code className="text-red-700"> &quot;5&quot;</code>;
+                </code>
+            </Codigo>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">
-                    O cifrão em JavaScript $
-                </h2>
+            <TextoComponent titulo="O cifrão em JavaScript $">
                 <p>
                     Como o JavaScript trata o cifrão como uma letra, os
                     identificadores que contêm $ são nomes de variáveis válidos:
                 </p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">let</code> $ ={" "}
-                        <code className="text-red-700">
-                            {" "}
-                            &quot;Olá Mundo!&quot;
-                        </code>
-                        ;
-                        <br />
-                        <code className="text-blue-500">let</code> $$$ ={" "}
-                        <code className="text-red-500"> 2</code>;
-                        <br />
-                        <code className="text-blue-500">let</code> $myMoney ={" "}
-                        <code className="text-red-500"> 5</code>;
+            </TextoComponent>
+            <Codigo titulo="Exemplo">
+                <code>
+                    <code className="text-blue-500">let</code> $ ={" "}
+                    <code className="text-red-700">
+                        {" "}
+                        &quot;Olá Mundo!&quot;
                     </code>
-                </div>
-            </div>
+                    ;
+                    <br />
+                    <code className="text-blue-500">let</code> $$$ ={" "}
+                    <code className="text-red-500"> 2</code>;
+                    <br />
+                    <code className="text-blue-500">let</code> $myMoney ={" "}
+                    <code className="text-red-500"> 5</code>;
+                </code>
+            </Codigo>
             <p className="p-5">
                 Usar o cifrão não é muito comum em JavaScript, mas os
                 programadores profissionais costumam usá-lo como um alias para a
@@ -711,42 +529,31 @@ function JSVariables() {
             </p>
             <p className="p-5">
                 Na biblioteca JavaScript jQuery, por exemplo, a função principal
-                <code className="px-1 text-red-600 bg-orange-100">$</code> é
-                usada para selecionar elementos HTML. Em jQuery
-                <code className="px-1 text-red-600 bg-orange-100">
-                    $(&quot;p&quot;);
-                </code>{" "}
-                significa &quot;selecionar todos os p elementos&quot;.
+                <InlineCode content="$" /> é usada para selecionar elementos
+                HTML. Em jQuery
+                <InlineCode content='$("p");' /> significa &quot;selecionar
+                todos os p elementos&quot;.
             </p>
             <hr className="m-5" />
-            <div className="flex flex-col gap-5 p-5">
-                <h2 className="text-3xl text-slate-800">
-                    Sublinhado JavaScript (_)
-                </h2>
+            <TextoComponent titulo="Sublinhado JavaScript (_)">
                 <p>
                     Como o JavaScript trata o sublinhado como uma letra, os
                     identificadores que contêm _ são nomes de variáveis válidos:
                 </p>
-            </div>
-            <div className="p-3 m-3 rounded-md bg-slate-300">
-                <h3 className="py-3 text-2xl">Exemplo</h3>
-                <div className="p-3 bg-white border-l-[6px] border-emerald-500">
-                    <code>
-                        <code className="text-blue-500">let</code> _lastName ={" "}
-                        <code className="text-red-700">
-                            {" "}
-                            &quot;Johnson&quot;
-                        </code>
-                        ;
-                        <br />
-                        <code className="text-blue-500">let</code> _x ={" "}
-                        <code className="text-red-500"> 2</code>;
-                        <br />
-                        <code className="text-blue-500">let</code> _100 ={" "}
-                        <code className="text-red-500"> 5</code>;
-                    </code>
-                </div>
-            </div>
+            </TextoComponent>
+            <Codigo titulo="Exemplo">
+                <code>
+                    <code className="text-blue-500">let</code> _lastName ={" "}
+                    <code className="text-red-700"> &quot;Johnson&quot;</code>
+                    ;
+                    <br />
+                    <code className="text-blue-500">let</code> _x ={" "}
+                    <code className="text-red-500"> 2</code>;
+                    <br />
+                    <code className="text-blue-500">let</code> _100 ={" "}
+                    <code className="text-red-500"> 5</code>;
+                </code>
+            </Codigo>
             <p className="p-5">
                 Usar o sublinhado não é muito comum em JavaScript, mas um
                 costume entre programadores profissionais é usá-lo como um alias

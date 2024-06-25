@@ -18,6 +18,7 @@ const Header = () => {
                     </Link>
                 </nav>
             </div>
+            <hr className="border-2 border-slate-400" />
             <Sidemenu />
         </div>
     );
