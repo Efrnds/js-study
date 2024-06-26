@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 
 function Codigo({ titulo, children }) {
     return (
-        <div className="p-3 m-3 rounded-md bg-slate-300">
+        <div className="flex flex-col gap-5 p-3 m-5 rounded-md shadow-md bg-slate-300">
             <h3 className="text-2xl ">{titulo}</h3>
-            <div className="p-3 my-3 bg-white border-l-[6px] border-emerald-500">
-                {children}
+            <div className="p-3 bg-white border-l-[6px] border-emerald-500">
+                <code className="w-full">{children}</code>
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ const TextoComponent = ({ titulo, children }) => {
     return (
         <div className="flex flex-col p-5">
             <h2 className="text-3xl text-slate-800">{titulo}</h2>
-            <p className="my-5">{children}</p>
+            <p className="mt-5">{children}</p>
         </div>
     );
 };

@@ -18,7 +18,7 @@ function Sidemenu() {
     ];
 
     return (
-        <div className="fixed h-screen font-sans bg-slate-300">
+        <div className="fixed h-screen font-sans border-r-2 border-slate-800 bg-slate-300">
             <ul className="flex flex-col">
                 <li>
                     <h4 className="p-5 pr-20 text-xl font-semibold">

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Main = ({ children }) => {
     return (
-        <main className="relative flex bg-white">
+        <main className="relative flex mt-20 ml-48 bg-white">
             {children}
         </main>
     );

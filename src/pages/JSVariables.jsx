@@ -3,10 +3,11 @@ import Nota from "../components/Nota";
 import InfoBox from "../components/InfoBox";
 import InlineCode from "../components/InlineCode";
 import TextoComponent from "../components/TextComponent";
+import Separador from "../components/Separador";
 
 function JSVariables() {
     return (
-        <div className="w-full mt-20 ml-48 overflow-auto bg-white">
+        <div className="w-full overflow-auto bg-white">
             <h2 className="p-5 text-3xl font-semibold text-slate-800">
                 Variáveis Javascript
             </h2>
@@ -25,7 +26,7 @@ function JSVariables() {
                     </li>
                 </ul>
             </InfoBox>
-            <div className="flex flex-col gap-5 px-5 pt-5">
+            <TextoComponent>
                 <p>
                     Neste primeiro exemplo, <InlineCode content="x" />,{" "}
                     <InlineCode content="y" />, e <InlineCode content="z" /> são
@@ -35,7 +36,7 @@ function JSVariables() {
                     Elas são declaradas automaticamente ao serem usadas pela
                     primeira vez:
                 </p>
-            </div>
+            </TextoComponent>
             <Codigo titulo="Exemplo">
                 <code>x = 5;</code>
                 <br />
@@ -47,7 +48,7 @@ function JSVariables() {
                 É considerado uma boa prática de programação de sempre declarar
                 suas variáveis antes de usá-las.
             </Nota>
-            <div className="px-5 py-5">
+            <TextoComponent>
                 <p>Pelos exemplos você pode imaginar que:</p>
                 <ul className="pl-8 list-disc">
                     <li>
@@ -63,7 +64,7 @@ function JSVariables() {
                         armazena o valor de 11
                     </li>
                 </ul>
-            </div>
+            </TextoComponent>
             <Codigo titulo="Exemplo usando var">
                 <code>var x = 5;</code>
                 <br />
@@ -169,7 +170,7 @@ function JSVariables() {
                     </li>
                 </ol>
             </Nota>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="Assim como na Álgebra">
                 <p>Assim como na álgebra, as variáveis contêm valores:</p>
             </TextoComponent>
@@ -190,7 +191,7 @@ function JSVariables() {
                 A partir do exemplo acima, você pode adivinhar que o total é
                 calculado como 11.
             </p>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="Identificadores JavaScript">
                 <p>
                     Todas as <b>variáveis</b> em JavaScript devem ser{" "}
@@ -233,7 +234,7 @@ function JSVariables() {
                     minúsculas.
                 </p>
             </Nota>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="O Operador de Atribuição">
                 <p>
                     Em JavaScript, o sinal de igual (<InlineCode content="=" />)
@@ -261,7 +262,7 @@ function JSVariables() {
                     <InlineCode content="==" /> em JavaScript
                 </p>
             </Nota>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="Tipos de dados JavaScript">
                 <p>
                     Variáveis JavaScript podem conter números como 100 e valores
@@ -291,7 +292,7 @@ function JSVariables() {
                 <br />
                 <code>let resposta = &apos;Sim Eu sou!&apos;;</code>
             </Codigo>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="Declarando uma Variável em JavaScript">
                 <p>
                     Criar uma variável em JavaScript é chamado de “declarar” uma
@@ -357,7 +358,7 @@ function JSVariables() {
                     um bloco de código.
                 </p>
             </Nota>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="Uma afirmação, muitas variáveis">
                 <p>
                     Você pode declarar várias variáveis em uma única declaração.
@@ -390,7 +391,7 @@ function JSVariables() {
                     price = <code className="text-red-500">200</code>;
                 </code>
             </Codigo>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="Valor = Undefined">
                 <p>
                     Em programas de computador, as variáveis são frequentemente
@@ -413,7 +414,7 @@ function JSVariables() {
                     <code className="text-blue-500">let</code> carName;
                 </code>
             </Codigo>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="Redeclarando Variáveis JavaScript">
                 <p>
                     Se você declarar novamente uma variável JavaScript declarada
@@ -447,7 +448,7 @@ function JSVariables() {
                     <code className="text-blue-500">let</code> carName;
                 </code>
             </Nota>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="Aritmética JavaScript">
                 <p>
                     Assim como acontece com a álgebra, você pode fazer
@@ -499,7 +500,7 @@ function JSVariables() {
                     <code className="text-red-700"> &quot;5&quot;</code>;
                 </code>
             </Codigo>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="O cifrão em JavaScript $">
                 <p>
                     Como o JavaScript trata o cifrão como uma letra, os
@@ -534,7 +535,7 @@ function JSVariables() {
                 <InlineCode content='$("p");' /> significa &quot;selecionar
                 todos os p elementos&quot;.
             </p>
-            <hr className="m-5" />
+            <Separador />
             <TextoComponent titulo="Sublinhado JavaScript (_)">
                 <p>
                     Como o JavaScript trata o sublinhado como uma letra, os
