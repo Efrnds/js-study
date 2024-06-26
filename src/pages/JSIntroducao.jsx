@@ -17,7 +17,7 @@ function JSIntroducao() {
     return (
         <div className="w-full overflow-auto bg-white">
             <h2 className="p-5 text-3xl font-semibold text-slate-800">
-                Resultado JavaScript
+                Introdução ao JavaScript
             </h2>
             <TextoComponent>
                 <div className="flex justify-between">
