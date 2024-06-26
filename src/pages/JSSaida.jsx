@@ -10,7 +10,7 @@ function JSSaida() {
     return (
         <div className="w-full overflow-auto bg-white ">
             <h2 className="p-5 text-3xl font-semibold text-slate-800">
-                Introdução ao Javascript
+                Saída Javascript
             </h2>
             <TextoComponent>
                 <div className="flex justify-between">
