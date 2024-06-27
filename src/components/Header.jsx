@@ -7,7 +7,7 @@ const Header = () => {
         <div className="fixed top-0 z-10 w-full">
             <div className="flex justify-between w-full p-5 bg-white border-b-2 border-slate-800">
                 <h1 className="text-4xl font-bold text-slate-800">
-                    Javascript Tutorial
+                    W3 Escolas
                 </h1>
                 <nav className="flex gap-4 my-auto">
                     <Link
