@@ -152,7 +152,65 @@ function JSSintaxe() {
                 </Codigo>
             </TextoComponent>
             <Separador />
-            <TextoComponent></TextoComponent>
+            <TextoComponent titulo="Expressões JavaScript">
+                <p>
+                    Uma expressão é uma combinação de valores, variáveis, e
+                    operadores, que calcula um valor.{" "}
+                </p>
+                <p>O cálculo é chamado de avaliação.</p>
+                <p>Por exemplo, 5 * 10 resulta em 50:</p>
+                <Codigo>
+                    <p>
+                        <code className="text-red-500">5</code> *{" "}
+                        <code className="text-red-500">10</code>
+                    </p>
+                </Codigo>
+                <p>Expressões também podem conter o valor de variáveis:</p>
+                <Codigo>
+                    <p>
+                        x * <code className="text-red-500">10</code>
+                    </p>
+                </Codigo>
+                <p>
+                    Os valores podem ser de vários tipos, como números e
+                    strings.
+                </p>
+                <p>
+                    Por exemplo, &quot;John&quot; + &quot; &quot; +
+                    &quot;Doe&quot;, resulta em &quot;John Doe&quot;:
+                </p>
+                <Codigo>
+                    <p>
+                        <code className="text-red-700">&quot;John&quot;</code> +{" "}
+                        <code className="text-red-700">&quot; &quot;</code> +{" "}
+                        <code className="text-red-700">&quot;Doe&quot;</code>;
+                    </p>
+                </Codigo>
+            </TextoComponent>
+            <Separador />
+            <TextoComponent titulo="Palavras-chave do JavaScript">
+                <p>
+                    As <b>palavras-chave</b> do JavaScript são usadas para
+                    identificar ações a serem executadas.
+                </p>
+                <p>
+                    A palavra-chave <InlineCode content="let" /> diz ao
+                    navegador para criar variáveis:
+                </p>
+                <Codigo>
+                    <p>
+                        <code className="text-blue-700">let</code> x, y;
+                    </p>
+                    <p>
+                        x = <code className="text-red-500">5</code> +{" "}
+                        <code className="text-red-500">6</code>;
+                    </p>
+                    <p>
+                        y = x + <code className="text-red-500">10</code>;
+                    </p>
+                </Codigo>
+                <p>A palavra-chave <InlineCode content="var"/> também diz ao navegador para criar variáveis:</p>
+            </TextoComponent>
         </div>
     );
 }
