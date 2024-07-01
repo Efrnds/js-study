@@ -49,7 +49,7 @@ function JSIntroducao() {
                     id=&quot;demo&quot;), e altera o conteúdo do elemento (HTML
                     interno) para &quot;Olá Javascript&quot;.
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     document.getElementById(
                     <code className="text-red-700">&quot;demo&quot;</code>
                     ).innerHTML ={" "}
@@ -61,7 +61,7 @@ function JSIntroducao() {
                 <Nota>
                     JavaScript aceita tanto aspas simples quanto aspas duplas:
                 </Nota>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     document.getElementById(
                     <code className="text-red-700">&apos;demo&apos;</code>
                     ).innerHTML ={" "}
@@ -78,7 +78,7 @@ function JSIntroducao() {
                     <InlineCode content="src" /> (atributo source) de uma tag{" "}
                     <InlineCode content="<img>" />:
                 </p>
-                <Codigo titulo="A lâmpada">
+                <Codigo titulo="A lâmpada" bg="slate-300">
                     <div className="flex">
                         <button
                             onClick={LigaLuz}
@@ -105,7 +105,7 @@ function JSIntroducao() {
             <TextoComponent titulo="JavaScript pode mudar o estilo (CSS) do HTML">
                 Alterar o estilo de um elemento HTML é uma variante de alterar
                 um atributo HTML:
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     document.getElementById(
                     <code className="text-red-700">&quot;demo&quot;</code>
                     ).style.fontSize ={" "}
@@ -118,7 +118,7 @@ function JSIntroducao() {
                     Esconder um elemento HTML é feito alterando o estilo{" "}
                     <InlineCode content="display" /> do elemento:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     document.getElementById(
                     <code className="text-red-700">&quot;demo&quot;</code>
                     ).style.display ={" "}
@@ -131,7 +131,7 @@ function JSIntroducao() {
                     Mostrar um elemento HTML é feito alterando o estilo{" "}
                     <InlineCode content="display" /> do elemento:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     document.getElementById(
                     <code className="text-red-700">&quot;demo&quot;</code>
                     ).style.display ={" "}

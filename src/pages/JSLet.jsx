@@ -1,5 +1,4 @@
 import Codigo from "../components/Codigo";
-import Nota from "../components/Nota";
 import InfoBox from "../components/InfoBox";
 import InlineCode from "../components/InlineCode";
 import TextoComponent from "../components/TextComponent";
@@ -65,6 +64,7 @@ function JSLet() {
                     ao JavaScript:
                 </p>
                 <Codigo
+                    bg="slate-300"
                     titulo="Exemplo"
                     texto="Variáveis declaradas dentro de um bloco { } não podem ser acessadas de fora do bloco:"
                 >
@@ -93,6 +93,7 @@ function JSLet() {
                 <Codigo
                     titulo="Exemplo"
                     texto="Variáveis declaradas com var dentro de um bloco { } podem ser acessadas de fora do bloco:"
+                    bg="slate-300"
                 >
                     &#123;
                     <br />
@@ -116,7 +117,10 @@ function JSLet() {
                     Você não pode acidentalmente redeclarar uma variável
                     declarada com <InlineCode content="let" />.
                 </p>
-                <Codigo texto="Com let você não pode fazer isso:">
+                <Codigo
+                    texto="Com let você não pode fazer isso:"
+                    bg="slate-300"
+                >
                     <code className="text-blue-600">let</code> x ={" "}
                     <code className="text-red-700">&quot;John Doe&quot;</code>;
                     <br />
@@ -127,7 +131,7 @@ function JSLet() {
                     Variáveis definidas com <InlineCode content="var" />{" "}
                     <b>podem</b> ser redeclaradas.
                 </p>
-                <Codigo texto="Com var você pode fazer isso:">
+                <Codigo texto="Com var você pode fazer isso:" bg="slate-300">
                     <code className="text-blue-600">var</code> x ={" "}
                     <code className="text-red-700">&quot;John Doe&quot;</code>;
                     <br />
@@ -145,7 +149,7 @@ function JSLet() {
                     Redeclarar uma variável dentro de um bloco também irá
                     redeclarar a variável fora do bloco:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-600">var</code> x ={" "}
                     <code className="text-red-500">10</code>;
                     <br />
@@ -179,7 +183,7 @@ function JSLet() {
                     Redeclarar uma variável dentro de um bloco não irá
                     redeclarar a variável fora do bloco:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-600">let</code> x ={" "}
                     <code className="text-red-500">10</code>;
                     <br />
@@ -363,7 +367,7 @@ function JSLet() {
                     <InlineCode content="var" /> é permitido em qualquer lugar
                     de um programa:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-600">var</code> x ={" "}
                     <code className="text-red-500">2</code>;
                     <br />
@@ -383,7 +387,7 @@ function JSLet() {
                     Com <InlineCode content="let" />, redeclarar uma variável no
                     mesmo bloco NÃO é permitido:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-600">var</code> x ={" "}
                     <code className="text-red-500">2</code>;
                     <code className="text-green-500">
@@ -438,7 +442,7 @@ function JSLet() {
                     Redeclarar uma variável com <InlineCode content="let" />, em
                     outro bloco, É permitido:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-600">let</code> x ={" "}
                     <code className="text-red-500">2</code>;
                     <code className="text-green-500">
@@ -469,6 +473,60 @@ function JSLet() {
                     <br />
                     &#125;
                 </Codigo>
+            </TextoComponent>
+            <Separador />
+            <TextoComponent titulo="Elevação Let">
+                <p>
+                    Variáveis definidas com <InlineCode content="var" /> são{" "}
+                    <b>Elevadas</b> para o topo e podem ser inicializadas a
+                    qualquer momento.
+                </p>
+                <p>
+                    O que significa que: Você pode usar a variável antes de ser
+                    declarada:
+                </p>
+                <Codigo titulo="Exemplo" texto="Isso é OK:" bg="slate-300">
+                    carName ={" "}
+                    <code className="text-red-700">&quot;Volvo&quot;</code>;
+                    <br />
+                    <code className="text-blue-600">var</code> carName;
+                </Codigo>
+                <p>
+                    Se você quiser aprender mais sobre elevação, estude o
+                    capítulo <u>Elevação JavaScript</u>.
+                </p>
+                <p>
+                    Variáveis definidas com <InlineCode content="let" /> também
+                    são elevadas ao topo do bloco, mas não inicializada.
+                </p>
+                <p>
+                    O que significa que: Usar a variável{" "}
+                    <InlineCode content="let" /> antes de ser declarada irá
+                    resultar em um <InlineCode content="ReferenceError" />:
+                </p>
+                <Codigo bg="red-200" titulo="Exemplo">
+                    carName ={" "}
+                    <code className="text-red-700">&quot;Saab&quot;</code>;
+                    <br />
+                    <code className="text-blue-600">let</code> carName ={" "}
+                    <code className="text-red-700">&quot;Volvo&quot;</code>;
+                </Codigo>
+            </TextoComponent>
+            <TextoComponent>
+                <div className="flex justify-between">
+                    <Link
+                        to="/js-variaveis"
+                        className="p-2 text-lg antialiased font-semibold text-white bg-green-600 rounded hover:bg-green-700 w-fit"
+                    >
+                        Anterior
+                    </Link>
+                    <Link
+                        to="/js-const"
+                        className="p-2 text-lg antialiased font-semibold text-white bg-green-600 rounded hover:bg-green-700 w-fit"
+                    >
+                        Próximo
+                    </Link>
+                </div>
             </TextoComponent>
         </div>
     );

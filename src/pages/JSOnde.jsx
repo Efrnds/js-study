@@ -34,7 +34,7 @@ function JSOnde() {
                     <InlineCode content="<script>" /> e{" "}
                     <InlineCode content="</script>" />.
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-500">&lt;</code>
                     <code className="text-red-700">script</code>
                     <code className="text-blue-500">&gt;</code>
@@ -95,7 +95,7 @@ function JSOnde() {
                     página HTML.
                 </p>
                 <p>A função é invocada (chamada) quando um botão é clicado: </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-500">&lt;</code>
                     <code className="text-amber-700">!DOCTYPE</code>
                     <code className="text-red-500"> html</code>
@@ -189,7 +189,7 @@ function JSOnde() {
                     JavaScript é colocada dentro da seção{" "}
                     <InlineCode content="<body>" /> de uma página HTML.
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-500">&lt;</code>
                     <code className="text-amber-700">!DOCTYPE</code>
                     <code className="text-red-500"> html</code>
@@ -278,7 +278,7 @@ function JSOnde() {
             <Separador />
             <TextoComponent titulo="JavaScript Externo">
                 <p>Scripts também podem ser colocados em arquivos externos:</p>
-                <Codigo titulo="Arquivo externo: meuScript.js">
+                <Codigo titulo="Arquivo externo: meuScript.js" bg="slate-300">
                     <code className="text-blue-500">function</code> myFunction(){" "}
                     {"{"}
                     <br />
@@ -305,7 +305,7 @@ function JSOnde() {
                     script no atributo <InlineCode content="src" /> (source) de
                     uma tag <InlineCode content="<script>" />:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-500">&lt;</code>
                     <code className="text-amber-700">script</code>
                     <code className="text-red-500"> src</code>
@@ -348,7 +348,7 @@ function JSOnde() {
                     Para adicionar vários arquivos de script a uma página - use
                     várias tags de script:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-500">&lt;</code>
                     <code className="text-amber-700">script</code>
                     <code className="text-red-500"> src</code>
@@ -390,7 +390,7 @@ function JSOnde() {
                     Este exemplo usa uma <b>URL completa</b> para fazer o link
                     com o meu arquivo meuScript.js:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-500">&lt;</code>
                     <code className="text-amber-700">script</code>
                     <code className="text-red-500"> src</code>
@@ -406,7 +406,7 @@ function JSOnde() {
                     Este exemplo usa um <b>caminho de arquivo</b> para fazer o
                     link com o arquivo meuScript.js:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-500">&lt;</code>
                     <code className="text-amber-700">script</code>
                     <code className="text-red-500"> src</code>
@@ -422,7 +422,7 @@ function JSOnde() {
                     Este exemplo não usa nenhuma URL para fazer o link com o
                     arquivo meuScript.js:
                 </p>
-                <Codigo titulo="Exemplo">
+                <Codigo titulo="Exemplo" bg="slate-300">
                     <code className="text-blue-500">&lt;</code>
                     <code className="text-amber-700">script</code>
                     <code className="text-red-500"> src</code>
