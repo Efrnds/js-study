@@ -29,9 +29,11 @@ function JSOnde() {
             </TextoComponent>
             <Separador />
             <TextoComponent titulo="A tag <script>">
-                Em HTML, o código JavaScript é inserido entre as tags{" "}
-                <InlineCode content="<script>" /> e{" "}
-                <InlineCode content="</script>" />.
+                <p>
+                    Em HTML, o código JavaScript é inserido entre as tags{" "}
+                    <InlineCode content="<script>" /> e{" "}
+                    <InlineCode content="</script>" />.
+                </p>
                 <Codigo titulo="Exemplo">
                     <code className="text-blue-500">&lt;</code>
                     <code className="text-red-700">script</code>
