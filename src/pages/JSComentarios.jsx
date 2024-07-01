@@ -52,7 +52,7 @@ function JSComentarios() {
                     Este exemplo usa um comentário de linha única antes de cada
                     linha de código:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-green-500">
                         &#x0002F;&#x0002F; Alterar o cabeçalho:
                     </code>
@@ -81,7 +81,7 @@ function JSComentarios() {
                     Este exemplo usa um comentário de uma linha no fim de cada
                     linha para explicar o código:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code className="text-blue-600">let </code>x ={" "}
                     <code className="text-red-500">5</code>;
                     <code className="text-green-500">
@@ -114,7 +114,7 @@ function JSComentarios() {
                     Este exemplo usa um comentário de múltiplas linhas (um bloco
                     de comentários) para explicar o código:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-green-500">
                         &#x0002F;*
                         <br />O código abaixo irá alterar <br /> o cabeçalho com
@@ -165,7 +165,7 @@ function JSComentarios() {
                     Este exemplo usa // para impedir a execução de uma das
                     linhas de código:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-green-500">
                         &#x0002F;&#x0002F;document.getElementById(&quot;myH&quot;).innerHTML
                         = &quot;Minha primeira página&quot;;
@@ -183,7 +183,7 @@ function JSComentarios() {
                     Este exemplo usa um comentário de bloco para prevenir a
                     execução de múltiplas linhas:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code className="text-green-500">
                         &#x0002F;* <br />{" "}
                         document.getElementById(&quot;myH&quot;).innerHTML =

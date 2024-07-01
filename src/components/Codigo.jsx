@@ -21,4 +21,8 @@ Codigo.propTypes = {
     bg: PropTypes.string,
 };
 
+Codigo.defaultProps = {
+    bg: "slate-300",
+};
+
 export default Codigo;

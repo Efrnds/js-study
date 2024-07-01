@@ -63,7 +63,7 @@ function JSSaida() {
                     HTML. A propriedade <InlineCode content="innerHTML" />{" "}
                     define o conteúdo HTML:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">&lt;</code>
                     <code className="text-red-700">!DOCTYPE </code>
                     <code className="text-red-500">html</code>
@@ -137,7 +137,7 @@ function JSSaida() {
                     Para propósitos de testes, é conveniente usar{" "}
                     <InlineCode content="document.write()" />:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">&lt;</code>
                     <code className="text-red-700">!DOCTYPE </code>
                     <code className="text-red-500">html</code>
@@ -194,7 +194,7 @@ function JSSaida() {
                     carregado, irá{" "}
                     <b>prescrever todo o conteúdo do documento!</b>
                 </div>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">&lt;</code>
                     <code className="text-red-700">!DOCTYPE </code>
                     <code className="text-red-500">html</code>
@@ -256,7 +256,7 @@ function JSSaida() {
             <Separador />
             <TextoComponent titulo="Usando window.alert()">
                 <p>Você pode usar uma caixa de alerta para mostrar dados:</p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">&lt;</code>
                     <code className="text-red-700">!DOCTYPE </code>
                     <code className="text-red-500">html</code>
@@ -319,7 +319,7 @@ function JSSaida() {
                     que especificar a palavra-chave{" "}
                     <InlineCode content="window" /> é opcional:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">&lt;</code>
                     <code className="text-red-700">!DOCTYPE </code>
                     <code className="text-red-500">html</code>
@@ -383,7 +383,7 @@ function JSSaida() {
                     Você irá aprender mais sobre depuração em um capítulo
                     posterior.
                 </Nota>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">&lt;</code>
                     <code className="text-red-700">!DOCTYPE </code>
                     <code className="text-red-500">html</code>
@@ -430,7 +430,7 @@ function JSSaida() {
                     <InlineCode content="window.print()" /> no navegador para
                     imprimir o conteúdo da janela atual.
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">&lt;</code>
                     <code className="text-red-700">!DOCTYPE </code>
                     <code className="text-red-500">html</code>

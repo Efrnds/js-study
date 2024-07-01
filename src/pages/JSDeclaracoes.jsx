@@ -28,7 +28,7 @@ function JSDeclaracoes() {
             </TextoComponent>
             <Separador />
             <TextoComponent>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">let </code>
                     x, y, z;{" "}
                     <code className="text-green-500">
@@ -79,7 +79,7 @@ function JSDeclaracoes() {
                     Dolly.&quot; dentro de um elemento HTML com
                     id=&quot;demo&quot;:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     document.getElementById(
                     <code className="text-red-700">&quot;demo&quot;</code>
                     ).innerHTML ={" "}
@@ -109,7 +109,7 @@ function JSDeclaracoes() {
                     Adicione um ponto e vírgula no fim de cada declaração
                     executável:
                 </p>
-                <Codigo titulo="Exemplos" bg="slate-300">
+                <Codigo titulo="Exemplos">
                     <code className="text-blue-600">let</code> a, b, c;{" "}
                     <code className="text-green-600">
                         &#x2F;&#x2F; Declare 3 variáveis
@@ -129,7 +129,7 @@ function JSDeclaracoes() {
                 </Codigo>
                 Quando separado por ponto e vírgula, varias declarações são
                 permitidas em apenas uma linha:
-                <Codigo bg="slate-300">
+                <Codigo>
                     a = <code className="text-red-500">5</code>; b ={" "}
                     <code className="text-red-500">6</code>; c = a + b;
                 </Codigo>
@@ -142,7 +142,7 @@ function JSDeclaracoes() {
                     legível.
                 </p>
                 <p>As linhas à seguir são equivalentes:</p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code className="text-blue-600">let</code> person ={" "}
                     <code className="text-red-700">&quot;Hege&quot;</code>;{" "}
                     <br />
@@ -153,7 +153,7 @@ function JSDeclaracoes() {
                     Uma boa prática é colocar espaços ao redor de operadores ( =
                     + - * / ):
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code className="text-blue-600">let</code> x = y + z;
                 </Codigo>
             </TextoComponent>
@@ -167,7 +167,7 @@ function JSDeclaracoes() {
                     Se uma instrução JavaScript não couber em uma linha, o
                     melhor lugar para quebrá-la é após um operador:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     document.getElementById(
                     <code className="text-red-700">&quot;demo&quot;</code>
                     ).innerHTML = <br />
@@ -189,7 +189,7 @@ function JSDeclaracoes() {
                     Um lugar onde você encontrará declarações agrupadas em
                     blocos é nas funções JavaScript:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">function</code> myFunction()
                     &#123;
                     <br />

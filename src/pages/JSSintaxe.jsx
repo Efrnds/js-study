@@ -81,7 +81,7 @@ function JSSintaxe() {
                 <li className="list-decimal">
                     <b>Números</b> são escritos com ou sem decimais
                 </li>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <p>
                         <code className="text-red-500">10.50</code>
                     </p>
@@ -94,7 +94,7 @@ function JSSintaxe() {
                     <b>Strings</b> são texto, escrito com aspas simples ou
                     duplas.
                 </li>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <p>
                         <code className="text-red-700">
                             &quot;John Doe&quot;
@@ -128,7 +128,7 @@ function JSSintaxe() {
                     Neste exemplo, x é definido como uma variável. Então, x é
                     atribuido (dado) o valor de 6:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <p>
                         <code className="text-blue-700">let</code> x;
                     </p>
@@ -145,7 +145,7 @@ function JSSintaxe() {
                     <InlineCode content="*" /> <InlineCode content="/" />) para{" "}
                     <b>calcular</b> valores.
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <p>
                         (<code className="text-red-500">5</code> +{" "}
                         <code className="text-red-500">6</code>) *{" "}
@@ -157,7 +157,7 @@ function JSSintaxe() {
                     <InlineCode content="=" /> ) para <b>atribuir</b> valores à
                     variáveis:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <p>
                         <code className="text-blue-700">let</code> x, y;
                     </p>
@@ -177,14 +177,14 @@ function JSSintaxe() {
                 </p>
                 <p>O cálculo é chamado de avaliação.</p>
                 <p>Por exemplo, 5 * 10 resulta em 50:</p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <p>
                         <code className="text-red-500">5</code> *{" "}
                         <code className="text-red-500">10</code>
                     </p>
                 </Codigo>
                 <p>Expressões também podem conter o valor de variáveis:</p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <p>
                         x * <code className="text-red-500">10</code>
                     </p>
@@ -197,7 +197,7 @@ function JSSintaxe() {
                     Por exemplo, &quot;John&quot; + &quot; &quot; +
                     &quot;Doe&quot;, resulta em &quot;John Doe&quot;:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <p>
                         <code className="text-red-700">&quot;John&quot;</code> +{" "}
                         <code className="text-red-700">&quot; &quot;</code> +{" "}
@@ -215,7 +215,7 @@ function JSSintaxe() {
                     A palavra-chave <InlineCode content="let" /> diz ao
                     navegador para criar variáveis:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <p>
                         <code className="text-blue-700">let</code> x, y;
                     </p>
@@ -231,7 +231,7 @@ function JSSintaxe() {
                     A palavra-chave <InlineCode content="var" /> também diz ao
                     navegador para criar variáveis:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <p>
                         <code className="text-blue-700">var</code> x, y;
                     </p>
@@ -270,7 +270,7 @@ function JSSintaxe() {
                     <b>comentário</b>.
                 </p>
                 <p>Comentários são ignorados, e não serão executados:</p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code className="text-blue-600">let</code> x ={" "}
                     <code className="text-red-500">5</code>;{" "}
                     <code className="text-green-600">
@@ -331,7 +331,7 @@ function JSSintaxe() {
                     <InlineCode content="lastname" />, são duas variáveis
                     diferentes:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code className="text-blue-600">let </code> lastname,
                     lastName;
                     <br />

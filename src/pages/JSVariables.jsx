@@ -53,7 +53,7 @@ function JSVariables() {
                     Elas são declaradas automaticamente ao serem usadas pela
                     primeira vez:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     x = <code className="text-red-500"> 5</code>;
                     <br />y =<code className="text-red-500"> 6</code>;
                     <br />
@@ -69,7 +69,7 @@ function JSVariables() {
                     <li>y armazena o valor de 6</li>
                     <li>z armazena o valor de 11</li>
                 </ul>
-                <Codigo titulo="Exemplo usando var" bg="slate-300">
+                <Codigo titulo="Exemplo usando var">
                     <code className="text-blue-600">var </code>x ={" "}
                     <code className="text-red-500">5</code>;
                     <br />
@@ -98,7 +98,7 @@ function JSVariables() {
                         navegadores antigos.
                     </p>
                 </Nota>
-                <Codigo titulo="Exemplo usando let" bg="slate-300">
+                <Codigo titulo="Exemplo usando let">
                     <code className="text-blue-600">let </code>x ={" "}
                     <code className="text-red-500">5</code>;
                     <br />
@@ -107,7 +107,7 @@ function JSVariables() {
                     <br />
                     <code className="text-blue-600">let </code>z = x + y;
                 </Codigo>
-                <Codigo titulo="Exemplo usando const" bg="slate-300">
+                <Codigo titulo="Exemplo usando const">
                     <code className="text-blue-600">const </code>x ={" "}
                     <code className="text-red-500">5</code>;
                     <br />
@@ -116,7 +116,7 @@ function JSVariables() {
                     <br />
                     <code className="text-blue-600">const </code>z = x + y;
                 </Codigo>
-                <Codigo titulo="Exemplo misto" bg="slate-300">
+                <Codigo titulo="Exemplo misto">
                     <code className="text-blue-600">const </code> preco1 ={" "}
                     <code className="text-red-500">5</code>;
                     <br />
@@ -186,7 +186,7 @@ function JSVariables() {
             <Separador />
             <TextoComponent titulo="Assim como na Álgebra">
                 <p>Assim como na álgebra, as variáveis contêm valores:</p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code className="text-blue-600">let </code>x ={" "}
                     <code className="text-red-500">5</code>;
                     <br />
@@ -196,7 +196,7 @@ function JSVariables() {
                 <p>
                     Assim como na álgebra, variáveis são usadas em expressões:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code className="text-blue-600">let </code>z = x + y;
                 </Codigo>
                 <p className="p-5">
@@ -257,7 +257,7 @@ function JSVariables() {
                     Isso é diferente da álgebra. O seguinte não faz sentido em
                     álgebra:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code>x = x + </code>
                     <code className="text-red-500">5</code>;
                 </Codigo>
@@ -298,7 +298,7 @@ function JSVariables() {
                     Se você colocar um número entre aspas, ele será tratado como
                     uma sequência de texto.
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">const</code> pi ={" "}
                     <code className="text-red-500">3.14</code>;
                     <br />
@@ -322,7 +322,7 @@ function JSVariables() {
                     <InlineCode content="var" />
                     ou <InlineCode content="let" />:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code className="text-blue-600">var</code> carName;
                     <br />
                     <p>ou:</p>
@@ -337,7 +337,7 @@ function JSVariables() {
                     Para <b>atribuir</b> um valor à variável, use o sinal de
                     igual:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     carName ={" "}
                     <code className="text-red-700">&quot;Volvo&quot;</code>;
                 </Codigo>
@@ -345,7 +345,7 @@ function JSVariables() {
                     Você tambem pode atribuir um valor para a variavel quando
                     você declara ela:
                 </p>
-                <Codigo bg="slate-300">
+                <Codigo>
                     <code className="text-blue-600">let </code>carName =
                     <code className="text-red-700">&quot;Volvo&quot;</code>;
                 </Codigo>
@@ -358,7 +358,7 @@ function JSVariables() {
                     Em seguida, &quot;emitimos&quot; o valor dentro de um
                     parágrafo HTML com id=&quot;demo&quot;:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-600">&lt;</code>
                         <code className="text-red-700">p</code>{" "}
@@ -403,7 +403,7 @@ function JSVariables() {
                     <InlineCode content="let" />e separe as variáveis com uma
                     <b> vírgula</b>:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-500">let</code> person ={" "}
                         <code className="text-red-700">
@@ -417,7 +417,7 @@ function JSVariables() {
                 <p className="p-5">
                     Uma declaração pode abranger várias linhas:{" "}
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-500">let</code> person ={" "}
                         <code className="text-red-700">
@@ -449,7 +449,7 @@ function JSVariables() {
                     <InlineCode content="undefined" /> após a execução desta
                     instrução:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-500">let</code> carName;
                     </code>
@@ -465,7 +465,7 @@ function JSVariables() {
                     A variável <InlineCode content="carName" /> ainda terá o
                     valor &quot;Volvo&quot; após a execução destas instruções:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-500">var</code> carName ={" "}
                         <code className="text-red-700">&quot;Volvo&quot;;</code>
@@ -496,7 +496,7 @@ function JSVariables() {
                     aritmética com variáveis JavaScript, usando operadores como
                     <InlineCode content="=" />e<InlineCode content="+" />:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-500">let</code> x ={" "}
                         <code className="text-red-500">5 </code>+
@@ -508,7 +508,7 @@ function JSVariables() {
                     Você também pode adicionar &quot;strings&quot;, mas strings
                     serão concatenadas:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-500">let</code> x ={" "}
                         <code className="text-red-700">&quot;John&quot; </code>+
@@ -517,7 +517,7 @@ function JSVariables() {
                     </code>
                 </Codigo>
                 <p className="p-5">Tente também isto:</p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-500">let</code> x ={" "}
                         <code className="text-red-700">&quot;5&quot; </code>+
@@ -532,7 +532,7 @@ function JSVariables() {
                     </p>
                 </Nota>
                 <p className="p-5">Agora tente isso:</p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-500">let</code> x ={" "}
                         <code className="text-red-500"> 2 </code>+
@@ -547,7 +547,7 @@ function JSVariables() {
                     Como o JavaScript trata o cifrão como uma letra, os
                     identificadores que contêm $ são nomes de variáveis válidos:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-500">let</code> $ ={" "}
                         <code className="text-red-700">
@@ -583,7 +583,7 @@ function JSVariables() {
                     Como o JavaScript trata o sublinhado como uma letra, os
                     identificadores que contêm _ são nomes de variáveis válidos:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code>
                         <code className="text-blue-500">let</code> _lastName ={" "}
                         <code className="text-red-700">

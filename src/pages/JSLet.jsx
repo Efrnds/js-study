@@ -64,7 +64,7 @@ function JSLet() {
                     ao JavaScript:
                 </p>
                 <Codigo
-                    bg="slate-300"
+                   
                     titulo="Exemplo"
                     texto="Variáveis declaradas dentro de um bloco { } não podem ser acessadas de fora do bloco:"
                 >
@@ -93,7 +93,7 @@ function JSLet() {
                 <Codigo
                     titulo="Exemplo"
                     texto="Variáveis declaradas com var dentro de um bloco { } podem ser acessadas de fora do bloco:"
-                    bg="slate-300"
+                   
                 >
                     &#123;
                     <br />
@@ -119,7 +119,7 @@ function JSLet() {
                 </p>
                 <Codigo
                     texto="Com let você não pode fazer isso:"
-                    bg="slate-300"
+                   
                 >
                     <code className="text-blue-600">let</code> x ={" "}
                     <code className="text-red-700">&quot;John Doe&quot;</code>;
@@ -131,7 +131,7 @@ function JSLet() {
                     Variáveis definidas com <InlineCode content="var" />{" "}
                     <b>podem</b> ser redeclaradas.
                 </p>
-                <Codigo texto="Com var você pode fazer isso:" bg="slate-300">
+                <Codigo texto="Com var você pode fazer isso:">
                     <code className="text-blue-600">var</code> x ={" "}
                     <code className="text-red-700">&quot;John Doe&quot;</code>;
                     <br />
@@ -149,7 +149,7 @@ function JSLet() {
                     Redeclarar uma variável dentro de um bloco também irá
                     redeclarar a variável fora do bloco:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">var</code> x ={" "}
                     <code className="text-red-500">10</code>;
                     <br />
@@ -183,7 +183,7 @@ function JSLet() {
                     Redeclarar uma variável dentro de um bloco não irá
                     redeclarar a variável fora do bloco:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">let</code> x ={" "}
                     <code className="text-red-500">10</code>;
                     <br />
@@ -367,7 +367,7 @@ function JSLet() {
                     <InlineCode content="var" /> é permitido em qualquer lugar
                     de um programa:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">var</code> x ={" "}
                     <code className="text-red-500">2</code>;
                     <br />
@@ -387,7 +387,7 @@ function JSLet() {
                     Com <InlineCode content="let" />, redeclarar uma variável no
                     mesmo bloco NÃO é permitido:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">var</code> x ={" "}
                     <code className="text-red-500">2</code>;
                     <code className="text-green-500">
@@ -442,7 +442,7 @@ function JSLet() {
                     Redeclarar uma variável com <InlineCode content="let" />, em
                     outro bloco, É permitido:
                 </p>
-                <Codigo titulo="Exemplo" bg="slate-300">
+                <Codigo titulo="Exemplo">
                     <code className="text-blue-600">let</code> x ={" "}
                     <code className="text-red-500">2</code>;
                     <code className="text-green-500">
@@ -485,7 +485,7 @@ function JSLet() {
                     O que significa que: Você pode usar a variável antes de ser
                     declarada:
                 </p>
-                <Codigo titulo="Exemplo" texto="Isso é OK:" bg="slate-300">
+                <Codigo titulo="Exemplo" texto="Isso é OK:">
                     carName ={" "}
                     <code className="text-red-700">&quot;Volvo&quot;</code>;
                     <br />
